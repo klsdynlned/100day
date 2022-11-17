@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ger</title>
+	</head>
+<body onLoad="show()"><div>
+        <div id="txt"></div>
+        <script language="javascript">
+            content = "for cc<br>遇到你是我命中的幸运<br />这100天<br />虽然时差很大<br />但是我们总有一段时间是在一起的<br />一起吃饭一起晚上忙完散步<br />不是你忙就是我忙<br />哈哈哈哈哈<br />一切的一切都会越来越好的<br />不管你过去是如何<br />未来我为你保驾护航<br />蓝色的风<br />to cc ";
+            i = 0;
+ 
+            function show() {
+                str = content.substr(0, i);
+                txt.innerHTML = str + "｜";
+                i++;
+                if (i > content.length) i = 0;
+                setTimeout("show()", 200);
+            }
+        </script>
+</div>
+    </body>
+</html>
